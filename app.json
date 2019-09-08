@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/work/work"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小鹿办公",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "color": "#333333",
+        "iconPath": "images/finger.png",
+        "selectedIconPath": "images/finger_se.png",
+        "selectedColor": "#1ABC9C"
+      },
+      {
+        "pagePath": "pages/work/work",
+        "text": "工作台",
+        "color": "#333333",
+        "iconPath": "images/workbetch.png",
+        "selectedIconPath": "images/workbetch_se.png",
+        "selectedColor": "#1ABC9C"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "color": "#333333",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile_se.png",
+        "selectedColor": "#1ABC9C"
+      }
+    ]
+  }
+}
