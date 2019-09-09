@@ -1,3 +1,30 @@
 <!--pages/user/index.wxml-->
-<text>pages/user/index.wxml
-</text>
+<view class="container">
+  <scroll-view scroll-y="true" style="height:100%; ">
+
+    <view class="userinfo">
+      <view class="avatar-view">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class="nick-view">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-desc">{{userInfo.province}} {{userInfo.city}}</text>
+      </view>
+    </view>
+
+    <view class="feature-view" wx:for="{{groups}}" wx:for-item="section">
+      <view class="group-row" wx:for="{{section.rows}}" wx:for-item="row">
+        <view class="row-left">
+          <image src="{{row.image}}" mode="aspectFill" style='width:{{row.size}}rpx; height:{{row.size}}rpx;'></image>
+        </view>
+        <view class="row-center">
+          <text class="row-text">{{row.title}}</text>
+        </view>
+        <view class="row-end">
+          <image src="../../images/right.png" mode="aspectFill" style='width:40rpx; height:40rpx;'></image>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+</view>
